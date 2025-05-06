@@ -1785,7 +1785,7 @@ MonoBehaviour:
       m_Name: Manipulation
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 358d69d8-74ca-4db3-8d1f-2fe83736f485
+      m_Id: 6af09717-d3e1-4309-a403-61c0b6a1d400
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2028,8 +2028,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UseOptimizedControls: 0
-  m_LeftHandMesh: {fileID: 1713058362968096892}
-  m_RightHandMesh: {fileID: 7395216812728091722}
+  m_MetaQuestLeftHandMesh: {fileID: 1713058362968096892}
+  m_MetaQuestRightHandMesh: {fileID: 7395216812728091722}
+  m_AndroidXRLeftHandMesh: {fileID: 0}
+  m_AndroidXRRightHandMesh: {fileID: 0}
   m_HandMeshMaterial: {fileID: 0}
   m_DrawMeshes: 1
   m_DebugDrawPrefab: {fileID: 6507399986997092475, guid: 254b742d65a15d14b9df756ae77de868, type: 3}
@@ -3131,7 +3133,7 @@ MonoBehaviour:
       m_Name: Manipulation
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: aec57c30-7cd3-4b9d-b0e0-4f5f5d995f03
+      m_Id: 3f4e262d-964f-48c7-b6cb-ab292af3b837
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []

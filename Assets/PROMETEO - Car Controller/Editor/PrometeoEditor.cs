@@ -75,7 +75,10 @@ public class PrometeoEditor : Editor
   private SerializedProperty turnRightButton;
   private SerializedProperty turnLeftButton;
   private SerializedProperty handbrakeButton;
-  private SerializedProperty steeringWheel; // Add serialized property for the steering wheel
+  private SerializedProperty knob; // Update to match the variable name in PrometeoCarController
+  private SerializedProperty accelerate;
+  private SerializedProperty brake;
+  private SerializedProperty handbrake;
 
   private void OnEnable()
   {
@@ -120,8 +123,10 @@ public class PrometeoEditor : Editor
     turnRightButton = SO.FindProperty("turnRightButton");
     turnLeftButton = SO.FindProperty("turnLeftButton");
     handbrakeButton = SO.FindProperty("handbrakeButton");
-    steeringWheel = SO.FindProperty("steeringWheel"); // Initialize the serialized property
-
+    knob = SO.FindProperty("knob"); // Ensure this matches the variable name in PrometeoCarController
+    accelerate = SO.FindProperty("accelerate");
+    brake = SO.FindProperty("brake");
+    handbrake = SO.FindProperty("handbrake");
   }
 
   public override void OnInspectorGUI()
@@ -192,7 +197,6 @@ public class PrometeoEditor : Editor
     EditorGUILayout.EndToggleGroup();
 
     //
-    //
     //STEERING WHEEL
     //
     //
@@ -201,7 +205,10 @@ public class PrometeoEditor : Editor
     GUILayout.Label("STEERING WHEEL", EditorStyles.boldLabel);
     GUILayout.Space(10);
 
-    EditorGUILayout.PropertyField(steeringWheel, new GUIContent("Steering Wheel: "));
+    EditorGUILayout.PropertyField(knob, new GUIContent("Steering Wheel (XR Knob): ")); // Update label for clarity
+    EditorGUILayout.PropertyField(accelerate, new GUIContent("Accelerate Input Action: "));
+    EditorGUILayout.PropertyField(brake, new GUIContent("Brake Input Action: "));
+    EditorGUILayout.PropertyField(handbrake, new GUIContent("Handbrake Input Action: "));
 
     //
     //

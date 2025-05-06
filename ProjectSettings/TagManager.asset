@@ -4,15 +4,15 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Anchor
+  - Plane
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Steer
   - Water
   - UI
-  - 
+  - Car
   - 
   - 
   - 
